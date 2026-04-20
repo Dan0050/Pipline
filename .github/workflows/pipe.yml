@@ -13,10 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build image
-      run: docker build -t Docker_nginx:1 .
+      run: docker build -t docker_nginx:1 .
     - name: Run Docker
       run: |
-        docker run -d --rm --name web -p 8080:80 Docker_nginx:1
+        docker run -d --rm --name web -p 8080:80 docker_nginx:1
         sleep 5
     - name: Check container 
       run: docker ps
@@ -25,4 +25,4 @@ jobs:
     - name: Login
       run: docker login -u ${{secrets.D_USER}} -p ${{ secrets.D_TOKEN}}
     - name: Push.
-      run: docker push dan0050/Docker_nginx:1
+      run: docker push dan0050/docker_nginx:1
