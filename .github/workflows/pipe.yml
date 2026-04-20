@@ -1,0 +1,21 @@
+name: First-Deploy
+
+on:
+  push:
+    branches: master
+jobs: 
+  my_test1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run script
+      run: echo Hello, script
+
+jobs: 
+  my_test2:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Run test2
+    run: echo Hello it test 2 
+    
