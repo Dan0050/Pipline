@@ -3,7 +3,7 @@ name: First-Deploy
 on:
   push:
     branches: 
-    - master
+      - main
 jobs: 
   my_test1:
     runs-on: ubuntu-latest
