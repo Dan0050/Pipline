@@ -22,7 +22,7 @@ jobs:
       run: docker ps
     - name: Web App
       run: curl http://localhost:8080
-    - name: Login and push DH
-      run: |
-        docker login -u ${{secrets.D_USER}} -p ${{ secrets.D_TOKEN}}
-        docker push deployapp:1
+    - name: Login
+      run: docker login -u ${{secrets.D_USER}} -p ${{ secrets.D_TOKEN}}
+    - name: Push
+      run: docker push deployapp:1
