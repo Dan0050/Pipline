@@ -18,5 +18,5 @@ jobs:
     
     steps:
     - name: Run test2
-      run: echo Hello it test 2 
+      run: echo Hello it test 2.
     
