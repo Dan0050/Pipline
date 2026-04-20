@@ -24,5 +24,5 @@ jobs:
       run: curl http://localhost:8080
     - name: Login
       run: docker login -u ${{secrets.D_USER}} -p ${{ secrets.D_TOKEN}}
-    - name: Push
+    - name: Push.
       run: docker push dan0050/deployapp:1
