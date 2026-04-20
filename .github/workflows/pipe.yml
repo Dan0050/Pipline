@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build image
-      run: docker build -t Docker-nginx:1 .
+      run: docker build -t Docker nginx:1 .
     - name: Run Docker
       run: |
         docker run -d --rm --name web -p 8080:80 Docker_nginx:1
