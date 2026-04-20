@@ -13,10 +13,18 @@ jobs:
     steps:
     - name: Run script
       run: echo Hello, script
+  my_var1:
+    runs-on: ubuntu-latest
     steps:
     - name: My Var
       run: echo $VAR1
 
+
+  my_var2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: My Var
+      run: echo $VAR2
 
   my_test2:
     runs-on: ubuntu-latest
